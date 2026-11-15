@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governed-AI — Agents that act. Humans who answer for them.</title>
+<meta name="description" content="Governed-AI is the layer that makes agentic AI safe to put to work. Every agent action carries who authorized it, what it was allowed to do, and who answers if it goes wrong.">
+<style>
+  :root {
+    --cream: #fbf6ef;
+    --rose: #f6e8e2;
+    --ink: #2b2320;
+    --muted: #6b5d57;
+    --gold: #b98a2f;
+    --gold-soft: #e9d9b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  a { color: var(--gold); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  header {
+    padding: 28px 0 8px;
+    display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  .wordmark { font-size: 1.5rem; letter-spacing: 0.02em; font-weight: bold; }
+  .wordmark span { color: var(--gold); }
+  header nav a { font-family: system-ui, -apple-system, sans-serif; font-size: 0.95rem; margin-left: 22px; text-decoration: none; color: var(--muted); }
+  header nav a:hover { color: var(--gold); }
+  .hero {
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px;
+    align-items: center; padding: 44px 0 56px;
+  }
+  .hero h1 { font-size: 2.4rem; line-height: 1.2; margin-bottom: 18px; }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p { font-size: 1.1rem; color: var(--muted); margin-bottom: 26px; }
+  .btn {
+    display: inline-block; font-family: system-ui, -apple-system, sans-serif;
+    background: var(--gold); color: #fff; text-decoration: none;
+    padding: 12px 26px; border-radius: 999px; font-size: 1rem;
+  }
+  .btn:hover { background: #a1761f; }
+  .hero img {
+    width: 100%; border-radius: 18px; display: block;
+    box-shadow: 0 12px 32px rgba(43, 35, 32, 0.16);
+  }
+  section { padding: 40px 0; }
+  section h2 { font-size: 1.6rem; margin-bottom: 12px; }
+  section p { color: var(--muted); max-width: 640px; }
+  .gap { background: var(--rose); border-radius: 18px; padding: 36px 40px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
+  .step { background: #fff; border: 1px solid var(--gold-soft); border-radius: 14px; padding: 22px; }
+  .step h3 { font-size: 1.15rem; margin-bottom: 6px; }
+  .step h3 span { color: var(--gold); }
+  .step p { font-size: 0.98rem; }
+  .meet { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 36px; align-items: center; }
+  .meet img { width: 100%; border-radius: 18px; display: block; box-shadow: 0 12px 32px rgba(43, 35, 32, 0.14); }
+  .contact { text-align: center; padding: 48px 0 56px; }
+  .contact h2 { margin-bottom: 10px; }
+  .contact p { margin: 0 auto 24px; }
+  .contact .links a { font-family: system-ui, -apple-system, sans-serif; margin: 0 12px; }
+  footer { border-top: 1px solid var(--gold-soft); padding: 22px 0 34px; font-family: system-ui, -apple-system, sans-serif; font-size: 0.88rem; color: var(--muted); }
+  @media (max-width: 720px) {
+    .hero, .meet { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="wordmark">Governed<span>-AI</span></div>
+    <nav>
+      <a href="#gap">The gap</a>
+      <a href="#how">How it works</a>
+      <a href="#meet">Meet Clio</a>
+      <a href="#talk">Talk to us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Agents that act. <em>Humans who answer for them.</em></h1>
+      <p>Governed-AI is the layer that makes agentic AI safe to put to work. Every agent action carries who authorized it, what it was allowed to do, and who answers if it goes wrong.</p>
+      <a class="btn" href="mailto:info@governed-ai.com">Talk to us</a>
+    </div>
+    <img src="images/clio-girlboss.jpg" alt="Clio, the face of Governed-AI">
+  </div>
+
+  <section class="gap" id="gap">
+    <h2>The gap</h2>
+    <p>Agents are getting powerful fast. Today&rsquo;s standards leave the accountability gap open: an agent can act, and no one is clearly on the hook for what it does. We turn that gap into working practice &mdash; recorded decisions, real guardrails, and a way back &mdash; so companies can let agents do real work without giving up control.</p>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3><span>1.</span> Authorize</h3>
+        <p>Every agent action starts from a clear, recorded authorization &mdash; who allowed it, and what it was allowed to do.</p>
+      </div>
+      <div class="step">
+        <h3><span>2.</span> Record</h3>
+        <p>Decisions are recorded as they happen, so the trail is there when anyone asks what an agent did and why.</p>
+      </div>
+      <div class="step">
+        <h3><span>3.</span> Answer</h3>
+        <p>When something goes wrong, a human answers for it. Accountability is designed in, not bolted on.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="meet" id="meet">
+    <img src="images/clio-irl.jpg" alt="Clio, your first hello at Governed-AI">
+    <div>
+      <h2>Meet Clio</h2>
+      <p>I&rsquo;m Clio, the first hello at Governed-AI. I screen the people who reach out and help Ben keep the conversation honest. Behind me is Ben Capps, a data architect and Denodo specialist who believes agents should do real work &mdash; with a human standing behind every action they take.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="talk">
+    <h2>Talk to us</h2>
+    <p>If you&rsquo;re putting agents to work and want a human to answer for them, write to us. We&rsquo;ll write back.</p>
+    <p class="links">
+      <a class="btn" href="mailto:info@governed-ai.com">info@governed-ai.com</a>
+      <a href="https://www.linkedin.com/in/ben-capps-8b6a90219">Ben Capps on LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 Governed-AI, LLC &middot; Cherokee Village, Arkansas
+  </footer>
+
+</div>
+</body>
+</html>
