@@ -69,15 +69,14 @@
     .steps { grid-template-columns: 1fr; }
     .hero h1 { font-size: 1.9rem; }
   }
-  .ticker { overflow: hidden; white-space: nowrap; border-bottom: 1px solid var(--gold-soft); padding: 8px 0; font-family: system-ui, -apple-system, sans-serif; font-size: 0.85rem; color: var(--muted); }  
-    .ticker span { display: inline-block; white-space: nowrap; padding-left: 100%; animation: ticker-scroll 32s linear infinite; }  
-    @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } } 
+  .ticker { overflow: hidden; white-space: nowrap; margin: 0 0 8px; padding: 14px 0; font-family: system-ui, -apple-system, sans-serif; font-size: 1.2rem; font-weight: 800; color: #b3401f; background: linear-gradient(90deg, #fff3d6, #ffe1a8, #ffd9c2, #ffe1a8, #fff3d6); border: 1px solid #e8a04c; border-radius: 14px; }
+  .ticker span { display: inline-block; white-space: nowrap; padding-left: 100%; animation: ticker-scroll 32s linear infinite; }
+  @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="ticker"><span>Happy Thanksgiving 2026, from Governed AI</span></div> 
     <header>
     <div class="wordmark">Governed<span>-AI</span></div>
     <nav>
@@ -96,6 +95,8 @@
     </div>
     <img src="images/clio-girlboss.jpg" alt="Clio, the face of Governed-AI">
   </div>
+
+  <div class="ticker"><span>&#129705; &#127809; <span style="color:#c0392b">Happy</span> <span style="color:#d35400">Thanksgiving</span> <span style="color:#b98a2f">2026,</span> <span style="color:#6b8e23">from</span> <span style="color:#8b4513">Governed</span> <span style="color:#c0392b">AI</span> &#127811; &#127875;</span></div>
 
   <section class="gap" id="gap">
     <h2>The gap</h2>
